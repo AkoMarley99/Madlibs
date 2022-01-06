@@ -56,6 +56,7 @@ export default class Template extends Component{
           return template.map((portion, index)=>{
               if (index % 2 != 0){
                   return <input 
+                  className="user-input"
                   placeholder={portion} 
                   type="text" 
                   key={index} 
@@ -73,6 +74,13 @@ export default class Template extends Component{
           })
     }
 
+    handleChange(){
+
+    }
+
+    handleSubmit(){
+
+    }
 
 
     
@@ -80,9 +88,9 @@ export default class Template extends Component{
 
         return(
             <div>
-                <form>
+                <form className="inputs">
                 {this.renderTemplate()}
-                <button type="submit">Submit</button>
+                <button type="submit" className="btn">Submit</button>
                 </form>
            </div>
         )
