@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import Header from './header';
 import Footer from './footer';
+import Template from './template';
 import Finished from './finished-madlib';
 import UserInput from './userinput';
 export default class App extends Component {
@@ -10,7 +11,7 @@ export default class App extends Component {
     return (
       <div className='app-wrapper'>
         <Header/>
-        <h1>MadLibs content</h1>
+        <Template/>
         <Footer/>
 
       </div>
